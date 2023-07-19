@@ -1,0 +1,10 @@
+.col-8{
+    margin-top: 65px;
+}
+
+.photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-4 mt-3">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <input type="text" placeholder="Student Name" class="form-control" id="name">
+                    <input type="text" placeholder="Student Surname" class="form-control mt-3" id="surname">
+                    <input type="date" class="form-control mt-3" id="date">
+                    <input type="text" placeholder="Enter Student imageLink" id="link" class="mt-3 form-control">
+                    <div class="form-group">
+                        <label for="learn"></label>
+                        <select class="form-control" id="learn">
+                            <option>Kontrakt</option>
+                            <option>Budget</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-success mt-3 d-block ml-auto" onclick="addStudent()">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-8">
+            <table class="table table-dark table-striped">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Ism Familiya</th>
+                    <th>Tug'ilgan Sana</th>
+                    <th>Rasm</th>
+                    <th>Oqish turi</th>
+                    <th>Amal</th>
+                </tr>
+                </thead>
+                <tbody id="result">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
